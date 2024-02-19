@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.containe {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.nosotros{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+.mision{
+    background-color: aliceblue;
+}
+.vision{
+    margin-top: 50px;
+    margin-bottom:50px ;
+}
+.history{
+    margin-bottom:50px ;
+}
+
+img{
+    width: 50%;
+}

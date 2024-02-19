@@ -1,0 +1,230 @@
+/*colorhunt*/
+ @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 45px,0px,45px,0px;
+}
+.logo img{
+    width: 90px;
+    height: 70px;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #C1F2B0 ;
+    
+}
+
+.menu-nav{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.container-nav{
+    width: 80%;
+    display: flex;
+}
+
+.menu a{
+    padding: 0px 25px 0px 25px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #FFFFFF;
+    
+}
+.menu a:hover{
+    color: #FFB996;
+}
+.menu-social ul{
+    list-style: none;
+    display: flex;
+}
+.social-media i{
+    padding: 25px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.social-media i:hover{
+    color: rgb(0, 255, 242);
+}
+.social-media{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    background-image: url(../img/planta1.jpg);
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;/*para que cubra todo el div*/
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+.hero h1{
+    color: white;
+    background-color: rgba(0, 0, 0, 2.6);
+    padding: 20px;
+}
+
+.plantas{
+    padding: 0px 10px 0px 10px;
+    font-family: fuente-planta;
+}
+.title-secondary{
+    text-align: center;
+    font-size: 40px;
+}
+.background-section-1{
+    background-image: linear-gradient(#FDFFAB,#D9EDBF);
+}
+.first-box{
+    display: flex;
+    padding: 5%;
+}
+
+.first-box img{
+    width: 50%;
+    padding: 2%;
+
+}
+
+.first-box p{
+    padding: 2%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+    
+}
+
+.first-box h4{
+    padding: 2%;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.background-section-2{
+    background-color: #D9EDBF;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    padding: 0px 25px 0px 25px;
+}
+
+.info{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.info h4{
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.icono-menu{
+    display: none;/*se activara solo en pantalla pequeña*/
+}
+.img-mobile{
+    display: none;
+}
+.img-desktop{
+    display: block;
+}
+
+/**/
+@media only screen and (max-width: 768px){
+    .logo{
+        width: 100%;
+        position: relative;
+        z-index: 999;
+
+    }
+    .menu-nav{
+        width: 100%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+    }
+    .menu li{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .hero{
+        height: 250px;
+        background-position: left;
+    }
+    .icono-menu{
+        display: block;
+        color: blue;
+        font-size: 20px;
+        padding: 8px 10px 8px 10px;
+    }
+    .container-nav{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: -200px;
+        background-color: #C1F2B0;
+        transition: 1s ease top;
+    }
+    .container-nav-2{
+        top: 64px;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .first-box{
+        display: block;
+    }
+    .first-box img{
+        width: 100%;
+        padding: 0;
+
+    }
+
+    .img-mobile{
+        display: block;
+    }
+    .img-desktop{
+        display: none;
+    }
+
+    .info{
+        width: 100%;
+        text-align: center;
+    }
+}
